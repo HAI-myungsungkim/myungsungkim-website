@@ -816,7 +816,7 @@ a:hover {
         padding: 0.35rem 0.7rem;
         font-size: 0.8rem;
     }
-    
+
     .container {
         padding: 0 1rem;
     }
@@ -1220,5 +1220,27 @@ a:hover {
 
     .project-image {
         min-height: 190px;
+    }
+}
+
+/* ===== Mobile fix: social icons stay in one row ===== */
+@media (max-width: 768px) {
+    .hero .social-links {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+    }
+
+    .hero .social-links a,
+    .hero .social-links .social-link {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 38px !important;
+        height: 38px !important;
+        flex: 0 0 38px !important;
     }
 }
