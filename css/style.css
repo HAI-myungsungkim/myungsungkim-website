@@ -260,7 +260,7 @@ a:hover {
 }
 
 .about-main h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .bio {
@@ -307,7 +307,7 @@ a:hover {
 .info-box h3 {
     font-size: 1.125rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--color-text);
 }
 
@@ -352,7 +352,7 @@ a:hover {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--color-text);
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--color-border);
