@@ -83,7 +83,7 @@ a:hover {
 
 .language-toggle {
     position: fixed;
-    top: 2rem;
+    top: 1rem;
     right: 2rem;
     z-index: 1000;
 }
@@ -92,7 +92,7 @@ a:hover {
     background: var(--color-bg);
     border: 1px solid var(--color-border);
     border-radius: 6px;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.9rem;
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--color-text);
