@@ -1170,7 +1170,22 @@ a:hover {
     }
 
     .social-links {
-        gap: 0.65rem;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .social-link {
+        width: 38px;
+        height: 38px;
+    }
+    .research-tags {
+        gap: 0.4rem;
+    }
+
+    .tag {
+        padding: 0.35rem 0.7rem;
+        font-size: 0.8rem;
     }
 
     .pub-title-row {
