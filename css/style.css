@@ -1349,3 +1349,230 @@ p {
 
     .footer { padding: 1.4rem 0; font-size: 0.82rem; }
 }
+
+
+/* ===== Update pass 2 (2026-10): About split, compact sidebar, conference papers ===== */
+
+/* About: Vision / Recent Research blocks */
+.bio-block {
+    margin-bottom: 0.6rem;
+}
+
+.bio-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--color-text);
+    margin: 0 0 0.3rem;
+}
+
+.bio-list {
+    margin: 0 0 0.35rem 1.05rem;
+    padding: 0;
+    list-style: disc;
+}
+
+.bio-list li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.28rem;
+}
+
+/* Sidebar: smaller Education / Contact boxes */
+.about-sidebar .info-box {
+    padding: 0.7rem 0.85rem;
+}
+
+.info-box h3 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-light);
+    margin-bottom: 0.4rem;
+}
+
+.info-box strong {
+    font-size: 0.78rem;
+}
+
+.edu-item {
+    margin-bottom: 0.45rem;
+}
+
+.edu-item strong {
+    font-size: 0.82rem;
+}
+
+.edu-item p,
+.info-box p {
+    font-size: 0.76rem;
+    line-height: 1.45;
+    margin-bottom: 0.28rem;
+}
+
+/* Peer-reviewed conference papers list */
+.peer-list {
+    margin-top: 0.1rem;
+}
+
+.peer-item {
+    padding: 0.55rem 0.1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.peer-item:last-child {
+    border-bottom: none;
+}
+
+.peer-title {
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.15rem;
+}
+
+.peer-title a {
+    margin-left: 0.25rem;
+    text-decoration: none;
+}
+
+.peer-authors {
+    font-size: 0.78rem;
+    color: var(--color-text-light);
+    line-height: 1.45;
+    margin-bottom: 0.1rem;
+}
+
+.peer-authors strong {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.peer-venue {
+    font-size: 0.78rem;
+    font-style: italic;
+    color: var(--color-text-light);
+    margin-bottom: 0;
+}
+
+/* Slightly tighter paper cards to offset the two added entries */
+@media (min-width: 769px) {
+    .pub-item {
+        padding: 0.72rem 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+    .pub-summary {
+        line-height: 1.42;
+    }
+    .pub-category {
+        margin-top: 0.5rem;
+    }
+}
+
+
+/* ===== Update pass 3 (2026-10): Entrepreneurship & Honors ===== */
+.ent-card {
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: 1rem 1.1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.ent-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.ent-role {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0;
+}
+
+.ent-period {
+    font-size: 0.78rem;
+    color: var(--color-text-light);
+    white-space: nowrap;
+}
+
+.ent-desc {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin: 0.35rem 0 0.5rem;
+}
+
+.ent-list {
+    margin: 0 0 0 1.05rem;
+    padding: 0;
+    list-style: disc;
+}
+
+.ent-list li {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 0.25rem;
+}
+
+.sub-category {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0.85rem 0 0.5rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text);
+}
+
+.award-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.award-list li {
+    position: relative;
+    padding-left: 1rem;
+    font-size: 0.87rem;
+    line-height: 1.5;
+    margin-bottom: 0.4rem;
+}
+
+.award-list li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+}
+
+/* the added nav entry is desktop-only so the mobile nav keeps its original fit */
+@media (max-width: 768px) {
+    .nav-links a.nav-extra {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .ent-card {
+        padding: 0.85rem 1rem;
+    }
+    .ent-desc,
+    .ent-list li {
+        font-size: 0.82rem;
+        line-height: 1.45;
+    }
+    .sub-category {
+        font-size: 1rem;
+        margin: 0.7rem 0 0.45rem;
+    }
+    .award-list li {
+        font-size: 0.83rem;
+        line-height: 1.45;
+        margin-bottom: 0.3rem;
+    }
+}
